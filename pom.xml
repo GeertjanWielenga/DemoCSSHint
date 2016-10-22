@@ -10,10 +10,61 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>nbm-maven-plugin</artifactId>
-                <version>3.13</version>
+                <version>3.14</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <useOSGiDependencies>true</useOSGiDependencies>
+                    <moduleDependencies>
+                        <dependency>
+                            <id>org.netbeans.modules:org-netbeans-modules-html-editor</id>
+                            <type>impl</type>
+                            <explicitValue>org.netbeans.modules.html.editor/2 = 201609300101</explicitValue>
+                        </dependency>
+                        <dependency>
+                            <id>org.netbeans.modules:org-netbeans-modules-html-editor-lib</id>
+                            <type>impl</type>
+                            <explicitValue>org.netbeans.modules.html.editor.lib/3 = 201609300101</explicitValue>
+                        </dependency>
+                        <dependency>
+                            <id>org.netbeans.modules:org-netbeans-modules-html</id>
+                            <type>impl</type>
+                            <explicitValue>org.netbeans.modules.html/1 = 201609300101</explicitValue>
+                        </dependency>
+                        <dependency>
+                            <id>org.netbeans.modules:org-netbeans-modules-editor-settings-storage</id>
+                            <type>impl</type>
+                            <explicitValue>org.netbeans.modules.editor.settings.storage/1 = 201609300101</explicitValue>
+                        </dependency>
+                        <dependency>
+                            <id>org.netbeans.modules:org-netbeans-modules-options-keymap</id>
+                            <type>impl</type>
+                            <explicitValue>org.netbeans.modules.options.keymap/1 = 201609300101</explicitValue>
+                        </dependency>
+                        <dependency>
+                            <id>org.netbeans.modules:org-netbeans-modules-options-editor</id>
+                            <type>impl</type>
+                            <explicitValue>org.netbeans.modules.options.editor/1 = 201609300101</explicitValue>
+                        </dependency>
+                        <dependency>
+                            <id>org.netbeans.modules:org-netbeans-core</id>
+                            <type>impl</type>
+                            <explicitValue>org.netbeans.core/1 = 201609300101</explicitValue>
+                        </dependency>
+                        <dependency>
+                            <id>org.netbeans.modules:org-netbeans-bootstrap</id>
+                            <type>impl</type>
+                            <explicitValue>org.netbeans.bootstrap/1 = 201609300101</explicitValue>
+                        </dependency>
+                        <dependency>
+                            <id>org.netbeans.modules:org-netbeans-core-startup</id>
+                            <type>impl</type>
+                            <explicitValue>org.netbeans.core.startup/1 = 201609300101</explicitValue>
+                        </dependency>
+                        <dependency>
+                            <id>org.netbeans.modules:org-netbeans-core-startup-base</id>
+                            <type>impl</type>
+                            <explicitValue>org.netbeans.core.startup.base/1 = 201609300101</explicitValue>
+                        </dependency>
+                    </moduleDependencies>
                 </configuration>
             </plugin>
             <plugin>
@@ -49,6 +100,48 @@
         <dependency>
             <groupId>org.netbeans.api</groupId>
             <artifactId>org-netbeans-api-annotations-common</artifactId>
+            <version>RELEASE82</version>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-netbeans-modules-projectapi</artifactId>
+            <version>RELEASE82</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-netbeans-modules-csl-api</artifactId>
+            <version>RELEASE82</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-openide-util</artifactId>
+            <version>RELEASE82</version>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-openide-filesystems</artifactId>
+            <version>RELEASE82</version>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.modules</groupId>
+            <artifactId>org-netbeans-modules-html-editor</artifactId>
+            <version>RELEASE82</version>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.modules</groupId>
+            <artifactId>org-netbeans-modules-html-editor-lib</artifactId>
+            <version>RELEASE82</version>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.modules</groupId>
+            <artifactId>org-netbeans-modules-html</artifactId>
+            <version>RELEASE82</version>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-netbeans-modules-parsing-api</artifactId>
             <version>RELEASE82</version>
         </dependency>
     </dependencies>
