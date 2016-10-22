@@ -10,13 +10,13 @@ import org.netbeans.modules.html.editor.api.gsf.HtmlParserResult;
 import org.netbeans.modules.html.editor.hints.HtmlRule;
 import org.netbeans.modules.html.editor.hints.HtmlRuleContext;
 import org.openide.filesystems.FileObject;
-import org.openide.util.NbBundle;
+import org.openide.util.NbBundle.Messages;
 
+@Messages({
+    "MSG_MISSING_CUSTOMER_ID=No first name defined",
+    "MSG_MISSING_CUSTOMER_DESC=Checks if first name exists."
+})
 public class MissingFirstNameRule extends HtmlRule {
-
-    
-    private static final String MSG_MISSING_CSS_ID = NbBundle.getMessage(MissingFirstNameRule.class, "MSG_MissingCssId");
-    private static final String MSG_MISSING_CSS_ID_DESC = NbBundle.getMessage(MissingFirstNameRule.class, "MSG_MissingCssId_Desc");
     
     public MissingFirstNameRule() {
     }
@@ -48,12 +48,12 @@ public class MissingFirstNameRule extends HtmlRule {
 
     @Override
     public String getDescription() {
-        return MSG_MISSING_CSS_ID_DESC;
+        return Bundle.MSG_MISSING_CUSTOMER_ID();
     }
 
     @Override
     public String getDisplayName() {
-        return MSG_MISSING_CSS_ID;
+        return Bundle.MSG_MISSING_CUSTOMER_DESC();
     }
 
     @Override
